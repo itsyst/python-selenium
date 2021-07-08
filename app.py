@@ -14,3 +14,5 @@ username_field.send_keys(config.username)
 password_field = browser.find_element_by_id("password")
 password_field.send_keys(config.password)
 password_field.submit()
+
+assert config.username in browser.page_source
